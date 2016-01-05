@@ -42,6 +42,6 @@ if __name__ == '__main__':
           0 7 * * *  /usr/bin/python /path/to/script/script.py -i "instance-id" -o start 
           0 11 * * *  /usr/bin/python /path/to/script/sript.py -i "instance-id" -o stop
     '''
-    op, iid = check_arg(sys.argv[1:])
+    op, iid = check_arg(sys.argv[2:])
     #print 'op=',op,'  iid=',iid
-     manage_instance(op,iid)
+    manage_instance(op,iid)
